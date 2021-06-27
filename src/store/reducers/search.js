@@ -6,8 +6,6 @@ export default function (state = {}, action) {
     case SEARCH_FOR_VIDEOS[SUCCESS]:
       return reduceSearchForVideos(action.response, action.searchQuery, state);
     case SEARCH_FOR_VIDEOS[REQUEST]:
-      // delete the previous search because otherwise our component flickers and shows the
-      // previous search results before it shows
       return action.nextPageToken ? state : {};
     default:
       return state;
