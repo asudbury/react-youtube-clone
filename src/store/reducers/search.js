@@ -28,8 +28,5 @@ function reduceSearchForVideos(response, searchQuery, prevState) {
   };
 }
 
-/*
-  Selectors
- */
 export const getSearchResults = (state) => state.search.results;
 export const getSearchNextPageToken = (state) => state.search.nextPageToken;

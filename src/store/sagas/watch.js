@@ -57,10 +57,6 @@ function* fetchVideoDetails(responses, shouldFetchChannelInfo) {
   }
 }
 
-
-/******************************************************************************/
-/******************************* WATCHERS *************************************/
-/******************************************************************************/
 export function* watchWatchDetails() {
   while (true) {
     const {videoId, channelId} = yield take(watchActions.WATCH_DETAILS[REQUEST]);

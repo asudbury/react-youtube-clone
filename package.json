@@ -1,5 +1,6 @@
 {
-  "name": "youtube-react",
+  "name": "react-youtube-clone",
+  "homepage": "https://asudbury.github.io/react-youtube-clone",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

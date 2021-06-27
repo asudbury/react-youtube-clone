@@ -25,10 +25,6 @@ export function* fetchMostPopularVideos(amount, loadDescription, nextPageToken) 
   yield fetchEntity(request, videoActions.mostPopular);
 }
 
-
-/******************************************************************************/
-/******************************* WATCHERS *************************************/
-/******************************************************************************/
 export function* watchMostPopularVideos() {
   while (true) {
     const {amount, loadDescription, nextPageToken} = yield take(videoActions.MOST_POPULAR[REQUEST]);

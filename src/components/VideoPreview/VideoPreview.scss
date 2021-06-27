@@ -4,10 +4,6 @@
   display: grid;
   grid: 180px auto / 320px;
 
-  /*
-     override grid settings to make VideoPreview horizontal.
-     Vertical is default
-   */
   &.horizontal {
     grid: auto / 210px auto;
 
@@ -69,7 +65,6 @@
   grid-row: 1 / 2;
   grid-column: 1 / 2;
 
-  /* Video duration label at bottom right */
   .time-label {
     position: absolute;
     background: $text-color-dark;

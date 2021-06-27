@@ -9,9 +9,6 @@ export function* fetchCommentThread(videoId, nextPageToken) {
   yield fetchEntity(request, commentActions.thread, videoId);
 }
 
-/******************************************************************************/
-/******************************* WATCHERS *************************************/
-/******************************************************************************/
 export function* watchCommentThread() {
   while(true) {
     const {videoId, nextPageToken} = yield take(commentActions.COMMENT_THREAD[REQUEST]);

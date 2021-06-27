@@ -161,33 +161,6 @@ function reduceVideoDetails(responses, prevState) {
   };
 }
 
-/* function reduceVideoDetails(responses) {
-  const videoResponses = responses.filter(response => response.result.kind === VIDEO_LIST_RESPONSE);
-  return videoResponses.reduce((accumulator, response) => {
-    response.result.items.forEach(video => {
-      accumulator[video.id] = video;
-    });
-    return accumulator;
-  }, {});
-}
-
-function reduceRelatedVideos(responses, videoIds) {
-  const videoResponses = responses.filter(response => response.result.kind === SEARCH_LIST_RESPONSE);
-  return videoResponses.reduce((accumulator, response, index) => {
-    const relatedIds = response.result.items.map(video => video.id.videoId);
-    accumulator[videoIds[index]] = {
-      totalResults: response.result.pageInfo.totalResults,
-      nextPageToken: response.result.nextPageToken,
-      items: relatedIds
-    };
-    return accumulator;
-  }, {});
-} */
-
-
-/*
-*   Selectors
-* */
 const getMostPopular = (state) => state.videos.mostPopular;
 export const getMostPopularVideos = createSelector(
   (state) => state.videos.byId,
@@ -246,7 +219,6 @@ export const getRelatedVideos = createSelector(
   state => state.videos.byId,
   (relatedVideoIds, videos) => {
     if (relatedVideoIds) {
-      // filter kicks out null values we might have
       return relatedVideoIds.map(videoId => videos[videoId]).filter(video => video);
     }
     return [];

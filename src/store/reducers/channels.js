@@ -57,9 +57,6 @@ function reduceVideoDetails(responses, prevState) {
   };
 }
 
-/*
-*   Selectors
-* */
 export const getChannel = (state, channelId) => {
   if (!channelId) return null;
   return state.channels.byId[channelId];

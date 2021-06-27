@@ -14,10 +14,6 @@ export default function* () {
   ]);
 }
 
-/*
-* entity must have a success, request and failure method
-* request is a function that returns a promise when called
-* */
 export function* fetchEntity(request, entity, ...args) {
   try {
     const response = yield call(request);
