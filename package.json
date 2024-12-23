@@ -10,7 +10,7 @@
     "react-dom": "^16.14.0",
     "react-linkify": "^1.0.0-alpha",
     "react-redux": "^7.2.9",
-    "react-router-dom": "^6.28.0",
+    "react-router-dom": "^6.28.1",
     "react-scripts": "5.0.1",
     "react-test-renderer": "^19.0.0",
     "react-waypoint": "^10.3.0",
