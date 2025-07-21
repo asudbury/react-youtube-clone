@@ -7,7 +7,7 @@
     "javascript-time-ago": "^2.5.11",
     "node-sass": "^9.0.0",
     "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "react-dom": "^19.1.0",
     "react-linkify": "^1.0.0-alpha",
     "react-redux": "^7.2.9",
     "react-router-dom": "^6.30.0",
